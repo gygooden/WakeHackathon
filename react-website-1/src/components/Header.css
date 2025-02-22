@@ -1,0 +1,14 @@
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .header-container h2 {
+    font-size: 2rem;
+    color: #333;
+  }
+  

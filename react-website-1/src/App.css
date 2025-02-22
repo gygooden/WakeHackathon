@@ -1,0 +1,98 @@
+/* Universal Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.home,
+.mission,
+.organoids,
+.publications,
+.team,
+.sign-up,
+.contact { 
+  display: flex;
+  height: 70vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+.home {
+  background-image: url('../public/images/cVO.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+.mission {
+  background-image: url('../public/images/hVO.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+.organoids {
+  background-image: url('../public/images/cVO array.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+.publications {
+  background-image: url('../public/images/CDH5.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+.team {
+  background-image: url('../public/images/cVO.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+.sign-up {
+  background-image: url('../public/images/cVO.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+.contact { 
+  background-image: url('../public/images/TAGLN.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+.header {
+  width: 100%;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  z-index: 1; 
+}
+
+.footer-container {
+  background: linear-gradient(90deg, rgb(40, 40, 40) 0%, rgb(35, 35, 35) 100%);
+  padding: 2rem 0 1rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
