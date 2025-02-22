@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './components/pages/Home';
 import Mission from './components/pages/Mission';
 import Organoids from './components/pages/Organoids';
-import Publications from './components/pages/Publications';
+import RelevantWork from './components/pages/RelevantWork';
 import Team from './components/pages/Team';
 import SignUp from './components/pages/SignUp';
 import Contact from './components/pages/Contact';
@@ -22,7 +22,7 @@ function App() {
           <Route path='/mission' element={ <Mission />}></Route>
           <Route path='/organoids' element={ <Organoids />}></Route> 
           <Route path='/team' element={ <Team />}></Route> 
-          <Route path='/publications' element={ <Publications />}></Route>
+          <Route path='/relevantwork' element={ <RelevantWork />}></Route>
           <Route path='/contact' element={ <Contact />}></Route> 
           <Route path='/sign-up' element={ <SignUp />}></Route>
         </Routes>

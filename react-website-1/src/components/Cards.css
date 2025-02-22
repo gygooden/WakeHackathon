@@ -1,5 +1,5 @@
 body {
-  background-color: #D0D0D0; /* Darker grey background for less contrast */
+  background-color: #D0D0D0;
 }
 
 .social-icons {
@@ -73,6 +73,17 @@ h1 {
   margin-bottom: 40px;
 }
 
+.social-icon-link.github {
+  color: #333;
+  font-size: 24px;
+  margin: 0 15px;
+  transition: color 0.3s ease;
+}
+
+.social-icon-link.github:hover {
+  color: #000;
+}
+
 .cards__item {
   display: flex;
   flex: 1;
@@ -80,6 +91,11 @@ h1 {
   border-radius: 10px;
   background-color: #E8E8E8;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cards__item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .cards__item__link {

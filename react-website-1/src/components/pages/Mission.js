@@ -8,9 +8,9 @@ export default function Mission({ hideHeader }) {
       {!hideHeader && <h1 className='mission'>Mission</h1>}
       <div className='mission-container'>
         <p className='mission-description'>
-          We aim to <span className='mission-underline'>significantly</span> improve human health<br /><br />
-          We are a very early-stage startup that creates <span className='mission-underline'>bigger</span> & <span className='mission-underline'>better</span> vascularized organoids via hPSCs, novel hardware & AI/ML for <span className='mission-underline'>drug discovery</span> & <span className='mission-underline'>regenerative therapies</span><br /><br />
-          We provide <span className='mission-underline'>pharma</span>, <span className='mission-underline'>academia</span> & <span className='mission-underline'>eventually</span> <span className='mission-underline'>patients</span> with products, services & partnerships
+          We aim to <span className='mission-underline'>enhance</span> healthcare accessibility<br /><br />
+          We are developing a <span className='mission-underline'>smart</span> & <span className='mission-underline'>intuitive</span> AI-powered web app that helps users understand their symptoms using advanced <span className='mission-underline'>AI analysis</span> & <span className='mission-underline'>machine learning</span><br /><br />
+          We provide <span className='mission-underline'>individuals</span>, <span className='mission-underline'>clinicians</span> & <span className='mission-underline'>researchers</span> with insights, recommendations & potential diagnoses while maintaining <span className='mission-underline'>data privacy</span> & <span className='mission-underline'>security</span>
         </p>
       </div>
     </div>

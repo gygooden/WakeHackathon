@@ -44,7 +44,7 @@ function Footer() {
           <div className='footer-link-items'>
             <h2> </h2>
             <a
-              href='mailto:contact@bullseyebio.com'
+              href='mailto:finems23@wfu.edu'
               target='_blank'
               rel='noreferrer'
               aria-label='Contact'
@@ -52,7 +52,7 @@ function Footer() {
               Company email
             </a>
             <a
-              href='mailto:contact@bullseyebio.com'
+              href='mailto:goodgy24@wfu.edu'
               target='_blank'
               rel='noreferrer'
               aria-label='Contact'
@@ -102,7 +102,7 @@ function Footer() {
             <div className='social-icons'>
               <a
                 className='social-icon-link instagram'
-                href='https://www.instagram.com/bullseyebiotech/'
+                href='https://www.instagram.com/Deacon_Code/'
                 target='_blank'
                 rel='noreferrer'
                 aria-label='Instagram'
@@ -111,7 +111,7 @@ function Footer() {
               </a>
               <a
                 className='social-icon-link twitter'
-                href='https://twitter.com/bullseyebio'
+                href='https://x.com/?lang=en'
                 target='_blank'
                 rel='noreferrer'
                 aria-label='Twitter'
@@ -120,7 +120,7 @@ function Footer() {
               </a>
               <a
                 className='social-icon-link linkedin'
-                href='https://www.linkedin.com/company/bullseyebio/'
+                href='https://www.linkedin.com/company/deacon-code/'
                 target='_blank'
                 rel='noreferrer'
                 aria-label='LinkedIn'
@@ -138,7 +138,7 @@ function Footer() {
         </Link>
       </div>
 
-      <small className='website-rights'>Bullseye Biotechnologies, Inc © 2024</small>
+      <small className='website-rights'>Grayson and Max, Inc © 2025</small>
     </div>
   );
 }
