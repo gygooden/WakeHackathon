@@ -13,7 +13,7 @@ const organoidGifs = [
 export default function Diagnose({ hideHeader }) {
   return (
     <div>
-      {!hideHeader && <h1 className='diagnose'>Diagnose</h1>}
+      {!hideHeader && <h1 className='diagnose'>Get Diagnosed</h1>}
       <div className='organoids-container'>
         <p className='organoids-description'>
           Diagnoses description process

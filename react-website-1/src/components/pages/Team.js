@@ -6,7 +6,7 @@ export default function Team({ hideHeader }) {
   return (
     <>
       {/* {!hideHeader && <TeamHero />} */}
-      {!hideHeader && <h1 className='team'>Team</h1>}
+      {!hideHeader && <h1 className='team'>Meet Our Team!</h1>}
       <TeamCards />
     </>
   );

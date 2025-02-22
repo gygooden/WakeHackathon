@@ -9,6 +9,18 @@ body {
   text-align: center;
 }
 
+.diagnose {
+  display: flex;
+  height: 70vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem; /* Match other headers */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
 .organoids-description {
   margin-top: 30px;
   font-size: 1.3rem; 

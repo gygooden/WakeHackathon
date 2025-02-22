@@ -9,7 +9,7 @@ function TeamCards() {
         <div className='cards__wrapper'>
           <ul className='cards__items'>
             <CardItem
-              src='images/Frankie.jpg'
+              src='images/Max.png'
               text='Max Finegan, PhD (Owner)'
               label='Owner'
               description={
@@ -22,12 +22,13 @@ function TeamCards() {
                 </div>
               }
               linkedin='https://www.linkedin.com/in/maxfinegan/'
+              github='https://github.com/mfinegan23'
               email='finems23@wfu.edu'
             />
           </ul>
           <CardItem
-            src='images/Grayson.jpg'
-            text='Grayson Gooden, Student (Developer)'
+            src='images/Grayson1.png'
+            text='Grayson Gooden, Student (Intern)'
             label='Intern'
             description={
               <div>

@@ -9,7 +9,7 @@ function HeroSection() {
     <div className='hero-container'>
       <video className="hero-video" src="/videos/PotentialBackground.mp4" autoPlay loop muted playsInline />
       <Link to='/' className='hero-logo'>
-        <img src={heroLogoImage} alt="Bullseye Hero Bio Logo" className="hero-logo-image" />
+        <img src={heroLogoImage} alt="Logo" className="hero-logo-image" />
       </Link>
     </div>
   );

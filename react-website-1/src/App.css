@@ -29,15 +29,15 @@
 }
 
 .mission {
-  background-image: url('../public/images/hVO.png');
+  background-image: url('../public/images/HealthBackground.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   color: #fff;
 }
 
-.organoids {
-  background-image: url('../public/images/cVO array.png');
+.diagnose {
+  background-image: url('../public/images/DiagnoseBackground.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -45,7 +45,7 @@
 }
 
 .publications {
-  background-image: url('../public/images/CDH5.png');
+  background-image: url('../public/images/ProjectsBackground.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -53,7 +53,7 @@
 }
 
 .team {
-  background-image: url('../public/images/cVO.png');
+  background-image: url('../public/images/TeamBackground.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -69,7 +69,7 @@
 }
 
 .contact { 
-  background-image: url('../public/images/TAGLN.png');
+  background-image: url('../public/images/ContactBackground.webp');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

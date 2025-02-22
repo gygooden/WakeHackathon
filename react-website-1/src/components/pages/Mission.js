@@ -5,7 +5,7 @@ import '../Mission.css';
 export default function Mission({ hideHeader }) {
   return (
     <div>
-      {!hideHeader && <h1 className='mission'>Mission</h1>}
+      {!hideHeader && <h1 className='mission'>Our Mission</h1>}
       <div className='mission-container'>
         <p className='mission-description'>
           We aim to <span className='mission-underline'>enhance</span> healthcare accessibility<br /><br />

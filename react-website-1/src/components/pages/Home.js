@@ -13,11 +13,11 @@ export default function Home() {
   return (
     <>
       <HeroSection />  {/* Ensure this is rendered directly */}
-      <Header title="Mission" />
+      <Header title="Our Mission" />
       <Mission hideHeader={true} />
-      <Header title="Diagnose" />
+      <Header title="Diagnosis Process" />
       <Diagnose hideHeader={true} />
-      <Header title="Meet the Team!" />
+      <Header title="Team!" />
       <Team hideHeader={true} />
       <Header title="Similar Projects" />
       <RelevantWork hideHeader={true} />
