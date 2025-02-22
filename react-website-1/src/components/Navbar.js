@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import logoImage from '../images/Bull-White.png'
 import './Navbar.css';
 
 function Navbar() {
@@ -21,9 +20,11 @@ function Navbar() {
     <>
       <nav className='navbar'>
         <div className='navbar-container'>
+          <div className="navbar-placeholder"></div>
+          {/* 
           <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
             <img src={logoImage} alt="Bullseye Bio Logo" className="logo-image" />
-          </Link>
+  </Link> */}
 
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
@@ -51,11 +52,11 @@ function Navbar() {
 
             <li className='nav-item'>
               <Link
-                to='/organoids'
+                to='/diagnose'
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
-                Organoids
+                Diagnose
               </Link>
             </li>
 
@@ -86,16 +87,6 @@ function Navbar() {
                 onClick={closeMobileMenu}
               >
                 Contact
-              </Link>
-            </li>
-
-            <li>
-              <Link
-                to='#'
-                className='nav-links-mobile'
-                onClick={openGoogleForm} // Interchangeable signup external link, also replaceable at top
-              >
-                Sign Up
               </Link>
             </li>
           </ul>

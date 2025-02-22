@@ -84,18 +84,21 @@ h1 {
   color: #000;
 }
 
+/* Updated Card Background to a Lighter Shade While Matching Navbar/Footer */
 .cards__item {
   display: flex;
   flex: 1;
   margin: 0 1rem;
   border-radius: 10px;
-  background-color: #E8E8E8;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(135deg, rgb(60, 60, 60) 0%, rgb(45, 45, 45) 100%);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
 }
 
+/* Card Hover Effect */
 .cards__item:hover {
   transform: scale(1.05);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
 }
 
 .cards__item__link {
@@ -126,11 +129,11 @@ h1 {
   bottom: 0;
   margin-left: 10px;
   padding: 6px 8px;
-  max-width: calc((100%) - 60px);
+  max-width: calc(100% - 60px);
   font-size: 12px;
   font-weight: 700;
   color: #fff;
-  background-color: #666;
+  background-color: rgba(0, 0, 0, 0.7);
   box-sizing: border-box;
 }
 
@@ -149,6 +152,10 @@ h1 {
   transition: all 0.2s linear;
 }
 
+.cards__item__img:hover {
+  filter: brightness(1.1);
+}
+
 .cards__item__info {
   padding: 20px 30px 30px;
   display: flex;
@@ -157,15 +164,20 @@ h1 {
 }
 
 .cards__item__text {
-  color: #333;
+  color: #dddddd;
   font-size: 25px;
   line-height: 24px;
   text-align: center;
+  transition: color 0.3s ease-in-out;
+}
+
+.cards__item__text:hover {
+  color: #ffffff;
 }
 
 .card_item_team_descriptions {
   font-size: 18.75px;
-  color: #333;
+  color: #bbbbbb;
   line-height: 20px;
   margin-top: 10px;
   text-align: left; 
@@ -180,6 +192,7 @@ h1 {
 
 .bulleted_list li {
   margin-bottom: 8px;
+  color: #bbbbbb;
 }
 
 .cards__item img {
@@ -188,6 +201,44 @@ h1 {
   object-fit: contain;
 }
 
+/* Social Icons in Cards */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.social-icon-link {
+  color: #aaaaaa;
+  font-size: 24px;
+  margin: 0 10px;
+  transition: color 0.3s ease-in-out;
+}
+
+.social-icon-link:hover {
+  color: #ffffff;
+}
+
+/* Social Icons - Individual */
+.social-icon-link.linkedin:hover {
+  color: #0077b5;
+}
+
+.social-icon-link.twitter:hover {
+  color: #1da1f2;
+}
+
+.social-icon-link.email:hover {
+  color: #c71610;
+}
+
+.social-icon-link.github:hover {
+  color: #ffffff;
+}
+
+/* Media Queries for Responsiveness */
 @media only screen and (min-width: 1200px) {
   .content__blog__container {
     width: 84%;

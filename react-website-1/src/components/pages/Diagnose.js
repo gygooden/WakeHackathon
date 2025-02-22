@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../App.css';
-import '../Organoids.css';
+import '../Diagnose.css';
 
 const organoidGifs = [
   { src: '/videos/cVOBeat.gif', description: 'Heart organoid beating (Phase)' },
@@ -10,14 +10,13 @@ const organoidGifs = [
   /* If wanting to use youtube clips: 'https://www.youtube.com/embed/0I5MldVOjWg',*/
 ];
 
-export default function Organoids({ hideHeader }) {
+export default function Diagnose({ hideHeader }) {
   return (
     <div>
-      {!hideHeader && <h1 className='organoids'>Organoids</h1>}
+      {!hideHeader && <h1 className='diagnose'>Diagnose</h1>}
       <div className='organoids-container'>
         <p className='organoids-description'>
-          Organoids are “mini-organs” in a dish. Until now, a lack of vascularization has limited human organoid viability & growth.
-          We create scalable & reproducible heart & liver vascularized organoids, and will eventually create all organ types in integrated systems.
+          Diagnoses description process
         </p>
         <div className='organoid-gifs'>
           {organoidGifs.map((organoid, index) => (

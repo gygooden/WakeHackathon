@@ -2,7 +2,7 @@ import React from 'react';
 import '../App.css';
 import { Link } from 'react-router-dom';
 import './HeroSection.css';
-import heroLogoImage from '../images/Bullseye.png';
+import heroLogoImage from '../images/MedLogo.png';
 
 function HeroSection() {
   return (

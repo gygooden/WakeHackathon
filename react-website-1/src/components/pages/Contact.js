@@ -21,7 +21,7 @@ function Contact({ hideHeader }) {
         <div className='contacts-list'>
           <p>Winston-Salem, North Carolina, USA</p>
           <p>(626)-208-6996</p>
-          <p>goodgy24@wfu.edu / finems23@wfu.edu</p>
+          <p>goodgy24@wfu.edu</p>
         </div>
       </div>
     </div>

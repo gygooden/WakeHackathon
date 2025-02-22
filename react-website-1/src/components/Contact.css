@@ -1,20 +1,24 @@
-/* Updated Contact.css */
-
+/* Contact Content Container */
 .contact-content {
   text-align: center;
   margin-top: 40px;
-  background-color: rgb(50, 50, 50); /* A slightly lighter gray than the footer */
+  background: linear-gradient(90deg, rgb(25, 25, 25) 0%, rgb(15, 15, 15) 100%);
   padding: 20px;
-  border-radius: 8px; /* Optional: to add some visual distinction */
+  border-radius: 8px;
   width: 80%;
   margin: 40px auto; /* Center and add vertical spacing */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
+/* Location Map Container */
 .location-container {
   width: 100%;
   margin: 0 auto 30px auto; /* Center the map and add margin at the bottom */
+  border-radius: 8px;
+  overflow: hidden;
 }
 
+/* Contact List */
 .contacts-list {
   margin-top: 20px;
 }
@@ -22,21 +26,25 @@
 .contacts-list p {
   margin: 8px 0;
   font-size: 18px;
-  color: #fff;
+  color: #cccccc;
 }
 
+/* Contact Links */
 .contact-link {
-  color: #fff;
+  color: #bbbbbb;
   text-decoration: none;
+  transition: color 0.3s ease-in-out;
 }
 
 .contact-link:hover {
+  color: #ffffff;
   text-decoration: underline;
 }
 
+/* Contact Header */
 .contact-header {
   text-align: center;
   font-size: 24px;
-  color: #fff;
+  color: #ffffff;
   margin-top: 20px;
 }

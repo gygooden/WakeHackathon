@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Footer.css';
-import logoImage from '../images/Bullseye.png';
+import logoImage from '../images/MedLogo.png';
 import { Link, useNavigate } from 'react-router-dom';
 
 function Footer() {
