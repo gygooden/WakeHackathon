@@ -1,4 +1,5 @@
-#Symptom Diagnosis AI App
+Symptom Diagnosis AI App
+
 ### This is an AI-powered web app that helps users understand their symptoms using advanced AI analysis and machine learning to provide potential diagnoses and recommendations.
 
 Table of Contents
