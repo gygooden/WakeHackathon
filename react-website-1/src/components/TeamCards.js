@@ -15,7 +15,7 @@ function TeamCards() {
               description={
                 <div>
                   <ul className='bulleted_list'>
-                    <li>Benches 405</li>
+                    <li>Benches 405, Supermodel, International Mystery Man</li>
                     <li>Pursuing BS - Wake Forest, Computer Science</li>
                     <li>Oversaw backend development</li>
                   </ul>
@@ -29,7 +29,7 @@ function TeamCards() {
           <CardItem
             src='images/Grayson1.png'
             text='Grayson Gooden, Student (Intern)'
-            label='Intern'
+            label='Lowly Intern'
             description={
               <div>
                 <ul className='bulleted_list'>
