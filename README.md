@@ -13,18 +13,19 @@ Project Overview
 We aim to transform healthcare by making it more accessible and personalized. The app leverages AI to analyze symptoms input by users and provide potential diagnoses, helping individuals, clinicians, and researchers with valuable insights. Data privacy and security are paramount, ensuring sensitive information is handled responsibly.
 
 ## Frontend Setup
-1. Clone the Repository
+#### 1. Clone the Repository
 First, clone the repository to your local machine:
+
 git clone https://github.com/yourusername/symptom-diagnosis-app.git
 cd symptom-diagnosis-app
 
-2. Install Dependencies
+#### 2. Install Dependencies
 Navigate to the frontend directory and install the required dependencies:
 
 cd frontend
 npm install
 
-3. Run the Frontend
+#### 3. Run the Frontend
 Start the React development server:
 
 npm start
