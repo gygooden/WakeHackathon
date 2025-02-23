@@ -1,6 +1,9 @@
 /* General Background */
 body {
   background-color: #E8E8E8;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 /* Diagnosis Section Container */
@@ -10,17 +13,18 @@ body {
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding: 3rem 0 1.5rem 0; /* Reduced bottom padding */
+  padding: 3rem 0 1.5rem 0;
 }
 
-/* Restore Original Header Styling (Matches Other Pages) */
+/* Header Styling */
 .diagnose {
   display: flex;
-  height: 70vh; /* Ensures uniform height across all headers */
+  height: 70vh;
   align-items: center;
   justify-content: center;
   font-size: 3rem;
   color: #fff;
+  text-align: center;
 }
 
 /* Diagnosis Card */
@@ -33,7 +37,7 @@ body {
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   text-align: center;
-  margin-bottom: 40px; /* Reduced margin to remove extra space */
+  margin-bottom: 40px;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
@@ -79,36 +83,57 @@ body {
   background-color: #005582;
 }
 
-/* GIF Section */
-.organoid-gifs {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 40px;
-  margin-bottom: 30px;
-}
-
-.organoid-gif {
-  flex-basis: calc(50% - 20px);
-  max-width: 400px;
-  width: 100%;
-  border: 2px solid #ddd;
-  padding: 20px;
+/* Diagnosis Result Container */
+.diagnosis-result {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 10px;
   background-color: #f9f9f9;
-  box-shadow: 0 2px 10px rgba(20, 48, 56, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  color: #333;
+  text-align: left;
+  width: 100%;
+  max-width: 800px;
+}
+
+/* Diagnosis Header */
+.diagnosis-result h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #0077b5;
+  text-align: center;
+}
+
+/* Each Diagnosis Box */
+.diagnosis-box {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #fff;
   border-radius: 8px;
-  overflow: hidden;
-  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  border-left: 6px solid #0077b5;
+  transition: transform 0.2s ease-in-out;
 }
 
-.organoid-gif:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+.diagnosis-box:hover {
+  transform: scale(1.02);
 }
 
-.organoid-gif p {
-  margin-top: 10px;
-  font-size: 1.1rem;
-  color: black;
+/* Condition Name */
+.diagnosis-box h3 {
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Symptoms & Suggestions Styling */
+.diagnosis-box p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 10px;
+  line-height: 1.6;
 }
 
 /* Ensure consistency across screen sizes */
@@ -116,5 +141,13 @@ body {
   .diagnosis-card {
     width: 95%;
     padding: 1.5rem;
+  }
+
+  .diagnosis-result {
+    max-width: 90%;
+  }
+
+  .diagnosis-box {
+    padding: 15px;
   }
 }
