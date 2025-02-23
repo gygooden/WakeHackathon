@@ -66,7 +66,7 @@ function Footer() {
           <div className='footer-link-items'>
             <h2>Our Work</h2>
             <Link to='/mission' onClick={closeMobileMenu}>Mission</Link>
-            <Link to='/organoids' onClick={closeMobileMenu}>Organoids</Link>
+            <Link to='/diagnose' onClick={closeMobileMenu}>Diagnose</Link>
           </div>
         </div>
 
@@ -74,7 +74,7 @@ function Footer() {
           <div className='footer-link-items'>
             <h2> </h2>
             <Link to='/team' onClick={closeMobileMenu}>Team</Link>
-            <Link to='/publications' onClick={closeMobileMenu}>Publications</Link>
+            <Link to='/relevantwork' onClick={closeMobileMenu}>Relevant Work</Link>
             <Link to='/contact' onClick={closeMobileMenu}>Contact</Link>
           </div>
         </div>
