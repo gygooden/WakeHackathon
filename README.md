@@ -32,34 +32,25 @@ npm start
 The app should now be running on http://localhost:3001/.
 
 ## Backend Setup
-1. Install Node.js & Dependencies
+#### 1. Install Node.js & Dependencies
 Ensure that Node.js (version 18+) is installed. If it's not installed, you can download it from here.
-
 Once Node.js is installed, navigate to the backend directory:
-
 cd backend
-2. Install Backend Dependencies
+#### 2. Install Backend Dependencies
 Run the following command to install the necessary dependencies:
-
 npm install
-3. Start the Backend
+#### 3. Start the Backend
 Start the backend server:
-
 npm start
 This will start the backend API on http://localhost:3000/.
 
 ## How to Run the App
-Run the Backend:
-
+#### Run the Backend:
 Navigate to the backend folder and run:
-
 npm start
 This will start the backend on http://localhost:3000/.
-
-Run the Frontend:
-
+#### Run the Frontend:
 Navigate to the frontend folder and run:
-
 npm start
 This will start the frontend on http://localhost:3001/.
 
