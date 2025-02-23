@@ -1,0 +1,120 @@
+/* General Background */
+body {
+  background-color: #E8E8E8;
+}
+
+/* Diagnosis Section Container */
+.diagnosis-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 3rem 0 1.5rem 0; /* Reduced bottom padding */
+}
+
+/* Restore Original Header Styling (Matches Other Pages) */
+.diagnose {
+  display: flex;
+  height: 70vh; /* Ensures uniform height across all headers */
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  color: #fff;
+}
+
+/* Diagnosis Card */
+.diagnosis-card {
+  width: 90%;
+  max-width: 900px;
+  background: linear-gradient(135deg, rgb(60, 60, 60) 0%, rgb(45, 45, 45) 100%);
+  color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin-bottom: 40px; /* Reduced margin to remove extra space */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.diagnosis-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.15);
+}
+
+/* Description Text */
+.diagnosis-description {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+/* Text Input Box */
+.diagnosis-input {
+  width: 100%;
+  min-height: 100px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  resize: vertical;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Submit Button */
+.diagnosis-submit {
+  margin-top: 1.5rem;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #0077b5;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.diagnosis-submit:hover {
+  background-color: #005582;
+}
+
+/* GIF Section */
+.organoid-gifs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.organoid-gif {
+  flex-basis: calc(50% - 20px);
+  max-width: 400px;
+  width: 100%;
+  border: 2px solid #ddd;
+  padding: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 10px rgba(20, 48, 56, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.organoid-gif:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.organoid-gif p {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  color: black;
+}
+
+/* Ensure consistency across screen sizes */
+@media screen and (max-width: 768px) {
+  .diagnosis-card {
+    width: 95%;
+    padding: 1.5rem;
+  }
+}

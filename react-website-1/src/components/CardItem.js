@@ -3,9 +3,15 @@ import './Cards.css';
 import './Footer.css'; 
 
 function CardItem(props) {
+  const handleClick = () => {
+    if (props.link) {
+      window.open(props.link, '_blank');
+    }
+  };
+
   return (
     <>
-      <li className='cards__item'>
+      <li className='cards__item' onClick={handleClick} style={{ cursor: 'pointer' }}>
         <div className='cards__item__link'>
           <div className='cards__item__pic-wrap' data-category={props.label}>
             <div className='card__image-container'>
@@ -29,6 +35,17 @@ function CardItem(props) {
                   aria-label='LinkedIn'
                 >
                   <i className='fab fa-linkedin' />
+                </a>
+              )}
+              {props.github && (
+                <a
+                  className='social-icon-link github'
+                  href={props.github}
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  aria-label='GitHub'
+                >
+                  <i className='fab fa-github' />
                 </a>
               )}
               {props.twitter && (
