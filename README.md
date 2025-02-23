@@ -56,13 +56,13 @@ This will start the frontend on http://localhost:3001/.
 
 ## Dependencies
 ### Frontend (React)
-react: React library for building the user interface.
+React: React library for building the user interface.
 react-dom: React's DOM rendering library.
 react-scripts: Scripts and configuration used by Create React App.
 axios: HTTP client for making API requests.
 
 ### Backend (Node.js & Express)
-express: Web framework for Node.js to build the backend API.
+Express: Web framework for Node.js to build the backend API.
 cors: Package to enable Cross-Origin Resource Sharing.
 body-parser: Middleware for parsing incoming request bodies.
 dotenv: Loads environment variables from a .env file.
