@@ -1,35 +1,55 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../../App.css';
 import '../Diagnose.css';
 
-const organoidGifs = [
-  { src: '/videos/cVOBeat.gif', description: 'Heart organoid beating (Phase)' },
-  { src: '/videos/cVONkx.gif', description: 'Beating heart organoid (Nkx-GFP)' },
-  { src: '/videos/cVOTimelapse.gif', description: 'Timelapse of organoid development (16 days)' },
-  { src: '/videos/cVO20xMag.gif', description: 'Organoid at 20x magnification' }
-  /* If wanting to use youtube clips: 'https://www.youtube.com/embed/0I5MldVOjWg',*/
-];
-
 export default function Diagnose({ hideHeader }) {
+  const [symptoms, setSymptoms] = useState('');
+
+  // Handle input changes
+  const handleInputChange = (event) => {
+    setSymptoms(event.target.value);
+  };
+
+  // Handle form submission
+  const handleSubmit = async () => {
+    if (!symptoms.trim()) {
+      alert('Enter your symptoms.');
+      return;
+    }
+
+    try {
+      const response = await fetch('http://localhost:5000/diagnose', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ symptoms }),
+      });
+
+      const data = await response.json();
+      alert(`Possible Conditions: ${data.prediction}`);
+    } catch (error) {
+      console.error('Error fetching diagnosis:', error);
+      alert('There was an error retrieving your diagnosis.');
+    }
+  };
+
   return (
     <div>
-      {!hideHeader && <h1 className='diagnose'>Get Diagnosed</h1>}
-      <div className='organoids-container'>
-        <p className='organoids-description'>
-          Diagnoses description process
-        </p>
-        <div className='organoid-gifs'>
-          {organoidGifs.map((organoid, index) => (
-            <div className='organoid-gif' key={index}>
-              <img
-                src={organoid.src}
-                alt={`Organoid GIF ${index + 1}`}
-                width='100%'
-                height='200'
-              />
-              <p>{organoid.description}</p>
-            </div>
-          ))}
+      {!hideHeader && <h1 className="diagnose">Get Diagnosed</h1>} {/* Matches Contact.js */}
+      <div className="diagnosis-container">
+        <div className="diagnosis-card">
+          <p className="diagnosis-description">
+            Please describe any current symptoms below, and our AI will suggest possible conditions!
+          </p>
+          <textarea
+            className="diagnosis-input"
+            placeholder="Enter your symptoms here..."
+            value={symptoms}
+            onChange={handleInputChange}
+            rows="4"
+          ></textarea>
+          <button className="diagnosis-submit" onClick={handleSubmit}>
+            Get Diagnosis
+          </button>
         </div>
       </div>
     </div>

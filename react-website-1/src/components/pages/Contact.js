@@ -19,7 +19,7 @@ function Contact({ hideHeader }) {
           ></iframe>
         </div>
         <div className='contacts-list'>
-          <p>Winston-Salem, North Carolina, USA</p>
+          <p>Wake Forest University, Winston-Salem, North Carolina, USA</p>
           <p>(626)-208-6996</p>
           <p>goodgy24@wfu.edu</p>
         </div>
